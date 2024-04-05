@@ -1,0 +1,34 @@
+# StepperMotor Library Keywords
+
+# Classes
+StepperMotor           // Main class responsible for controlling stepper motors with Arduino using the ULN2003APG Driver.
+
+# Constructors and Destructor
+StepperMotor()         // Default Constructor
+~StepperMotor()        // Default Destructor
+
+# Public Member Functions
+Initialize()            // Initialize the stepper motor settings
+moveForwardForTime()   // Move the stepper motor forward for a specified duration with a given speed
+moveBackwardForTime()  // Move the stepper motor backward for a specified duration with a given speed
+setAcceleration()      // Set the acceleration rate of the stepper motor
+setDeceleration()      // Set the deceleration rate of the stepper motor
+
+# Private Member Functions
+OneStep()              // Move one step in the specified direction
+moveForward()          // Move the stepper motor forward one step
+moveBackward()         // Move the stepper motor backward one step
+Control()              // Control the individual coils of the stepper motor
+calculateSpeeds()      // Calculate delays based on the target speed (RPM)
+
+# Variables
+stepPins               // Array to store pin numbers
+stepNumber             // Current step number
+forward                // Direction Flag
+acceleration           // Acceleration rate (RPM/s)
+deceleration           // Deceleration rate (RPM/s)
+slowSpeed              // Amount of time for slow speed (microseconds)
+mediumSpeed            // Amount of time for medium speed (microseconds)
+fastSpeed              // Amount of time for fast speed (microseconds)
+minDelayMicros         // Minimum delay between steps (microseconds)
+stepsPerRevolution     // Number of steps per revolution
