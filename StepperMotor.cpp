@@ -6,11 +6,11 @@
 /*   By: ababdelo <ababdelo@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/05 14:22:36 by ababdelo          #+#    #+#             */
-/*   Updated: 2024/04/05 23:32:36 by ababdelo         ###   ########.fr       */
+/*   Updated: 2024/04/06 00:17:07 by ababdelo         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
-#include "../Includes/StepperMotor.hpp"
+#include "StepperMotor.hpp"
 
 /*Default Constructor*/
 StepperMotor::StepperMotor(int *pins, int stepsPerRevolution) :
