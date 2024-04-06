@@ -1,14 +1,10 @@
-# StepperMotor Library Keywords
+# Arduino custom keywords file for StepperMotor library
 
-# Syntax highlighting for StepperMotor class
-StepperMotor	CLASS
+# Syntax coloring for StepperMotor class
+StepperMotor    KEYWORD1
 
-# Constructor and Destructor
-StepperMotor()	CONSTRUCTOR
-~StepperMotor()	DESTRUCTOR
-
-# Public Member Functions
-moveForward	METHOD
-moveBackward	METHOD
-setAcceleration	METHOD
-setDeceleration	METHOD
+# Public member functions
+moveForward     KEYWORD2
+moveBackward    KEYWORD2
+setAcceleration KEYWORD2
+setDeceleration KEYWORD2
