@@ -6,20 +6,20 @@
 /*   By: ababdelo <ababdelo@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/05 15:00:34 by ababdelo          #+#    #+#             */
-/*   Updated: 2024/04/05 23:17:49 by ababdelo         ###   ########.fr       */
+/*   Updated: 2024/04/06 00:28:42 by ababdelo         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
 #include <StepperMotor.hpp>
 
 // Define the pins connected to your stepper motor coils
-#define STEPPER_PINS {9, 10, 11, 12} // You may need to change these values according to your setup
+int stepperPins[] = {9, 10, 11, 12}; // You may need to change these values according to your setup
 
 // Define the number of steps per revolution for your stepper motor
-# define STEPS_PER_REVOLUTION 200 // You may need to change this value according to your motor revolution
+const int STEPS_PER_REVOLUTION = 200; // You may need to change this value according to your motor revolution
 
 // Create an instance of the StepperMotor class
-StepperMotor myStepper(STEPPER_PINS, STEPS_PER_REVOLUTION);
+StepperMotor myStepper(stepperPins, STEPS_PER_REVOLUTION);
 
 void setup() {
   // Set up the serial monitor
